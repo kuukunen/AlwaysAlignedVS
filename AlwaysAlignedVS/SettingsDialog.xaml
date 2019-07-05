@@ -17,7 +17,7 @@
 			<ColumnDefinition Width="Auto" />
 		</Grid.ColumnDefinitions>
         <CheckBox Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Name="enabled" IsChecked="{Binding Configuration.Enabled}" Checked="widgetChanged" Unchecked="widgetChanged" Content="Enable elastic tabstops" Margin="8" />
-		<CheckBox Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Name="convertOnLoadSave" IsChecked="{Binding Configuration.ConvertOnLoadSave}" Checked="widgetChanged" Unchecked="widgetChanged" Content="Convert to/from space based files" Margin="8" />
+		<!--<CheckBox Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Name="convertOnLoadSave" IsChecked="{Binding Configuration.ConvertOnLoadSave}" Checked="widgetChanged" Unchecked="widgetChanged" Content="Convert to/from space based files" Margin="8" />-->
 		<Label Grid.Column="0" Grid.Row="2" Content="Minimum cell width (pixels):" />
 		<Label Grid.Column="0" Grid.Row="3" Content="Cell padding (pixels):" />
         <TextBox Grid.Column="1" Grid.Row="2" Text="{Binding Configuration.MinimumCellWidth}" Name="minimumCellWidth" TextChanged="widgetChanged" PreviewTextInput="textBox_PreviewTextInput" HorizontalAlignment="Right" Margin="8,4" Width="80" />
