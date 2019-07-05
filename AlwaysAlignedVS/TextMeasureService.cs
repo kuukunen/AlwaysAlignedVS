@@ -48,7 +48,7 @@ namespace AlwaysAligned
 			for (int i = 0; i < span.Length; i++)
 			{
 				var curPoint = span.Start + i;
-				widthSum += GetWidthFromCache(curPoint);
+				widthSum += System.Math.Ceiling(GetWidthFromCache(curPoint));
 			}
 			return widthSum;
 		}
